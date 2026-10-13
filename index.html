@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung lưới chính chứa toàn bộ bố cục trang web -->
+    <div class="grid-layout">
+        
+        <!-- 1. Header: Tiêu đề trang web -->
+        <header class="header">
+            <h1>Trang Web CSS Grid</h1>
+            <p>Học lập trình Front-end cơ bản với CSS Grid & Responsive</p>
+        </header>
+
+        <!-- 2. Navigation: Thanh điều hướng -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3. Main Content: Khu vực hiển thị nội dung chính -->
+        <main class="main-content">
+            <h2>Nội Dung Chính</h2>
+            <p>
+                CSS Grid Layout là hệ thống bố cục lưới hai chiều mạnh mẽ trong CSS. Nó cho phép chúng ta chia trang web thành các hàng và cột một cách dễ dàng mà không cần dùng đến các kỹ thuật cũ như <code>float</code> hay <code>inline-block</code>.
+            </p>
+            <p>
+                Bằng cách kết hợp thuộc tính <code>grid-template-areas</code> với Media Queries, việc chuyển đổi từ bố cục đa cột trên máy tính sang bố cục 1 cột xếp dọc trên điện thoại trở nên vô cùng trực quan và hiệu quả.
+            </p>
+            <div class="content-card">
+                <h3>Lợi ích của CSS Grid</h3>
+                <ul>
+                    <li>Quản lý đồng thời cả hàng (rows) và cột (columns).</li>
+                    <li>Tự do thay đổi thứ tự và vị trí phần tử theo kích thước màn hình.</li>
+                    <li>Giảm thiểu tối đa việc lồng ghép các thẻ <code>&lt;div&gt;</code> phức tạp.</li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- 4. Sidebar: Khu vực thông tin phụ -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Tin mới nhất</h3>
+                <ul>
+                    <li><a href="#">Lộ trình học HTML & CSS 2026</a></li>
+                    <li><a href="#">Thủ thuật làm chủ Flexbox & Grid</a></li>
+                    <li><a href="#">Tối ưu hóa SEO cho trang web</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Quảng cáo</h3>
+                <div class="ad-box">Banner khóa học lập trình Web</div>
+            </div>
+        </aside>
+
+        <!-- 5. Footer: Thông tin cuối trang -->
+        <footer class="footer">
+            <p>&copy; 2026 CodeGym. Bản quyền thuộc về tác giả.</p>
+            <p>Email: contact@codegym.vn | Hotline: 024-xxxx-xxxx</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
